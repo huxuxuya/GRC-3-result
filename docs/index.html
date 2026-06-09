@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRC-3 Result</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>GRC-3 Result</h1>
+        <p>Case, epoch, recipient, P4 overlap, and proposal export dashboard.</p>
+      </div>
+      <div class="actions">
+        <button id="export-proposal">Export proposal.json</button>
+        <button id="export-breakdown">Export payout_breakdown.json</button>
+        <button id="export-roles">Export role_config.json</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-grid" id="summary"></section>
+
+      <section class="toolbar">
+        <label>
+          Case
+          <select id="case-filter"></select>
+        </label>
+        <label>
+          Epoch
+          <select id="epoch-filter"></select>
+        </label>
+        <label>
+          Overlap
+          <select id="overlap-filter">
+            <option value="all">All</option>
+            <option value="overlap">P4 overlap only</option>
+            <option value="remaining">Remaining payout only</option>
+            <option value="zero">Zero final payout</option>
+          </select>
+        </label>
+        <label class="search">
+          Address
+          <input id="address-filter" placeholder="gonka1...">
+        </label>
+      </section>
+
+      <nav class="tabs">
+        <button class="tab active" data-tab="rows">Rows</button>
+        <button class="tab" data-tab="cases">Cases</button>
+        <button class="tab" data-tab="addresses">Addresses</button>
+        <button class="tab" data-tab="epochs">Epochs</button>
+        <button class="tab" data-tab="case-epochs">Case/Epoch</button>
+        <button class="tab" data-tab="roles">Roles</button>
+      </nav>
+
+      <section id="warnings" class="warnings" hidden></section>
+
+      <section class="panel" data-panel="rows">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Epoch</th>
+                <th>Address</th>
+                <th>Case</th>
+                <th>Track</th>
+                <th class="num">Planned</th>
+                <th class="num">Already paid by P4</th>
+                <th class="num">Deducted from payout</th>
+                <th class="num">Remaining</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody id="rows-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel hidden" data-panel="cases">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Case</th>
+                <th>Rows</th>
+                <th>Addresses</th>
+                <th class="num">Planned</th>
+                <th class="num">Already paid by P4</th>
+                <th class="num">Deducted from payout</th>
+                <th class="num">Overpaid by P4</th>
+                <th class="num">Remaining</th>
+              </tr>
+            </thead>
+            <tbody id="cases-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel hidden" data-panel="addresses">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Address</th>
+                <th>Cases</th>
+                <th>Epochs</th>
+                <th class="num">Planned</th>
+                <th class="num">Already paid by P4</th>
+                <th class="num">Deducted from payout</th>
+                <th class="num">Remaining</th>
+              </tr>
+            </thead>
+            <tbody id="addresses-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel hidden" data-panel="epochs">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Epoch</th>
+                <th>Rows</th>
+                <th>Addresses</th>
+                <th>Cases</th>
+                <th class="num">Planned</th>
+                <th class="num">Already paid by P4</th>
+                <th class="num">Deducted from payout</th>
+                <th class="num">Remaining</th>
+              </tr>
+            </thead>
+            <tbody id="epochs-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel hidden" data-panel="case-epochs">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Case</th>
+                <th>Epoch</th>
+                <th>Rows</th>
+                <th>Addresses</th>
+                <th class="num">Planned</th>
+                <th class="num">Already paid by P4</th>
+                <th class="num">Deducted from payout</th>
+                <th class="num">Remaining</th>
+              </tr>
+            </thead>
+            <tbody id="case-epochs-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel hidden" data-panel="roles">
+        <div class="role-header">
+          <div>
+            <h2>Investigators, Validators, Organizer</h2>
+            <p>Non-zero role payouts require a valid Gonka address before proposal export.</p>
+          </div>
+          <label class="file-button">
+            Import config
+            <input id="role-import" type="file" accept="application/json">
+          </label>
+        </div>
+        <div id="role-editor"></div>
+        <div class="role-summary">
+          <h2>Bounty Totals By Address</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Address</th>
+                  <th>Names</th>
+                  <th>Roles</th>
+                  <th>Cases</th>
+                  <th class="num">Bounty amount</th>
+                </tr>
+              </thead>
+              <tbody id="role-totals-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

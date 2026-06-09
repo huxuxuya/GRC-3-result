@@ -1,0 +1,49 @@
+epoch,address,case_family,case_track,source_status,source_scope,planned_amount_gonka,p4_paid_overlap_gonka,p4_paid_tracks,overlap_adjustment_gonka,p4_overpaid_gonka,final_payout_gonka,comment
+97,gonka19nd876302m3ll2h7sd55hp9pqzv2hpqalh8pjj,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,8.432384134,,,,,8.432384134,No exact P4 paid overlap.
+112,gonka10kmsyy00yxnky2xfqy9wce0l7uaadq4jjp3ykg,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,7.993576578,,,,,7.993576578,No exact P4 paid overlap.
+116,gonka12l3fwycgvs9tdpze59za89zq4cexhkxddafxdh,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,150.749450599,,,,,150.749450599,No exact P4 paid overlap.
+116,gonka1598sglu00mktw3973jmwsu3vdw29mgcfjleju2,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,71.065864191,,,,,71.065864191,No exact P4 paid overlap.
+116,gonka15fpzwc7d2z3r4y5475p6k7uqknnkj38gsus3d9,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,7.100517600,,,,,7.100517600,No exact P4 paid overlap.
+116,gonka170wwtpvhwzgghd638z84z35gjggl7cvyzrkh8p,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,156.696892692,,,,,156.696892692,No exact P4 paid overlap.
+116,gonka1h9asnq9x2kux2m8pcwaeegljzmd4ym4h26p07n,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,33.560566095,,,,,33.560566095,No exact P4 paid overlap.
+116,gonka1hjjse9r0zfe0q8k4hfe4t5xuzstjqvky7dnj05,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,56.561388067,,,,,56.561388067,No exact P4 paid overlap.
+116,gonka1hmjjq6ghykww8f8ujajnnmu2dpk2drrth8mtva,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,11.227314154,,,,,11.227314154,No exact P4 paid overlap.
+116,gonka1jt5mqrx0yg5k6qdqhnkc4kpya4mzy52ngyh34c,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,19.116778155,,,,,19.116778155,No exact P4 paid overlap.
+116,gonka1lh0danzlvxm5qtaly7myqd3n5sus0fq92n8shx,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,182.307306602,,,,,182.307306602,No exact P4 paid overlap.
+116,gonka1mmwngrtpc4fd4jquv5vfsnscqdzmcz0zgrvy0g,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,15.900304370,,,,,15.900304370,No exact P4 paid overlap.
+116,gonka1pks9m29wqac2kxdj8v8acq58rjshh6u8y2a772,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,243.541684885,,,,,243.541684885,No exact P4 paid overlap.
+116,gonka1q3n37e2uc4npkheyjllx2ztx5yh42rk6vz3kgn,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,27.431059448,,,,,27.431059448,No exact P4 paid overlap.
+116,gonka1qx3znmtpxqgmz3t4tgpdk68dsfxuccn6cxnp8s,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,25.489037540,,,,,25.489037540,No exact P4 paid overlap.
+116,gonka1t88kkvnrayz5l2u043tccd2pks4rt8y346z9dv,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,4.551613846,,,,,4.551613846,No exact P4 paid overlap.
+116,gonka1xy9py6zlxsum2m0z422qwa0um6au7ls4r65ky8,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,32.043361480,,,,,32.043361480,No exact P4 paid overlap.
+129,gonka1t8jjpaq2m0svru73kh9l0m62e7lr7qxxw6uvea,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,7.470360710,,,,,7.470360710,No exact P4 paid overlap.
+132,gonka105ce4495mj0mwkxqeasgdzqfq5jjrfq32eza5l,P3-CAND-02,P3-CAND-02,local_validated_recommended,settle_drop_epoch_cell,14.096689777,,,,,14.096689777,No exact P4 paid overlap.
+265,gonka1j7x6dv42xehe9e5au4ku3wvzwtqlegfjhlvzj6,P3-CAND-03,P3-CAND-03-EXT,local_validated_recommended,same_address_epoch_265_extension,20896.527179100,20896.527179100,P4-e265-source-cpoc,20896.527179100,,0.000000000,Already fully paid by P4 exact overlap; final payout is zero.
+267,gonka1j7x6dv42xehe9e5au4ku3wvzwtqlegfjhlvzj6,P3-CAND-03,P3-CAND-03,local_validated_recommended,strict_epoch_267_kimi,10262.057515369,,,,,10262.057515369,No exact P4 paid overlap.
+272,gonka10079cnl3nuh2k82mhkm04dj0slhtw9kmjewwau,P3-CAND-01,P3-CAND-01-confirmed,pending_estimate,confirmed_six,5700.549989479,,,,,5700.549989479,No exact P4 paid overlap.
+272,gonka1007dchuqgdnute4qam70kmn56j2vfw38mhyrqv,P3-CAND-01,P3-CAND-01-confirmed,pending_estimate,confirmed_six,7287.485958471,,,,,7287.485958471,No exact P4 paid overlap.
+272,gonka1007g0ut3u4wjkay9hegqfev4pj90qgexwskmcw,P3-CAND-01,P3-CAND-01-confirmed,pending_estimate,confirmed_six,7238.152949000,,,,,7238.152949000,No exact P4 paid overlap.
+272,gonka15munkmx6x7k6rqqeexjet4556p7at39ks9qgr5,P3-CAND-01,P3-CAND-01-confirmed,pending_estimate,confirmed_six,4064.625997098,,,,,4064.625997098,No exact P4 paid overlap.
+272,gonka16xa2sdc8qe2289nzr4e6vmdyzlke8g8fn8e75s,P3-CAND-01,P3-CAND-01-manual-review,pending_estimate,manual_review_not_in_confirmed_total,69.342202123,,,,,69.342202123,No exact P4 paid overlap.
+272,gonka1ce02jjduga8jvwj8jx39mxn0jr345vgkx7lk2n,P3-CAND-01,P3-CAND-01-confirmed,pending_estimate,confirmed_six,1965.730685067,,,,,1965.730685067,No exact P4 paid overlap.
+272,gonka1wt8sr9jxzpec65j7zkxsgh6edk3m6r8nlf5za4,P3-CAND-01,P3-CAND-01-confirmed,pending_estimate,confirmed_six,8784.035574445,,,,,8784.035574445,No exact P4 paid overlap.
+276,gonka10079cnl3nuh2k82mhkm04dj0slhtw9kmjewwau,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,3617.119418189,3427.176240497,P4-GroupCap-source,3427.176240497,,189.943177692,Exact P4 paid overlap deducted; remaining payout is positive.
+276,gonka10mmdjau4dnj8krs7sh7t7635ttnmq9u3vqgz09,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,failed_cpoc_full_drop,16028.213179615,,,,,16028.213179615,No exact P4 paid overlap.
+276,gonka14ljarev2nlzu4ej50vx7ylj2rvg4n20fnq2ysc,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,79.662604523,,,,,79.662604523,No exact P4 paid overlap.
+276,gonka168rtjfkszuhcggg4dfyse4yh7xn9zwfglnkns2,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,34.245204993,1590.871839692,P4-GroupCap-source,34.245204993,1556.626634699,0.000000000,P4 exact payment exceeds this planned amount; final payout floored at zero.
+276,gonka17pw6099q758qwzewtrqmqpf5c2lrhr97fwqexu,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,failed_cpoc_full_drop,923.163292052,,,,,923.163292052,No exact P4 paid overlap.
+276,gonka1amlmhjym02shahjv8ldmupg4cx0qc66q6f85rj,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,failed_cpoc_full_drop,217.372045879,,,,,217.372045879,No exact P4 paid overlap.
+276,gonka1ce02jjduga8jvwj8jx39mxn0jr345vgkx7lk2n,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,9.957825565,,,,,9.957825565,No exact P4 paid overlap.
+276,gonka1d694r00czmq75txghwjcuk07lxvc8d4ekgsha0,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,failed_cpoc_full_drop,113.179188133,,,,,113.179188133,No exact P4 paid overlap.
+276,gonka1duuaqdx06sx8v2dzggltwwmqyuw8lvjkjq7xll,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,161.268199400,,,,,161.268199400,No exact P4 paid overlap.
+276,gonka1fvly5jrewyjmjfgwah3khy9rttq4cqajcesv9p,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,0.728621382,,,,,0.728621382,No exact P4 paid overlap.
+276,gonka1gvrrhjmy4w4mayvs2s5l23edj8ertcmtd2v4zr,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,3390.761041922,5081.270939637,P4-GroupCap-source,3390.761041922,1690.509897715,0.000000000,P4 exact payment exceeds this planned amount; final payout floored at zero.
+276,gonka1gyk0aahvr3qeju4zx0nplfreej6cy4jjk8svc5,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,failed_cpoc_full_drop,83.791459026,,,,,83.791459026,No exact P4 paid overlap.
+276,gonka1kx9mca3xm8u8ypzfuhmxey66u0ufxhs7nm6wc5,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,10.929320742,351.632757601,P4-GroupCap-source,10.929320742,340.703436859,0.000000000,P4 exact payment exceeds this planned amount; final payout floored at zero.
+276,gonka1mmlyd5xxu5l68yx8wzclrkxkxvm88mhq5tp5s0,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,failed_cpoc_full_drop,3540.857046786,,,,,3540.857046786,No exact P4 paid overlap.
+276,gonka1rcpc45n6zch9qlkn4m3cwngekad89xu8mcr09v,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,2.914485531,,,,,2.914485531,No exact P4 paid overlap.
+276,gonka1scskt6wpnjnumsah6kjphmdu87vjgvcxmn4rxv,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,3342.429156860,1811.086293948,P4-GroupCap-source,1811.086293948,,1531.342862912,Exact P4 paid overlap deducted; remaining payout is positive.
+276,gonka1u4zxypjgcr8khlzefwjr0vwdaj2uzruw2cehj3,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,failed_cpoc_full_drop,246.274027398,,,,,246.274027398,No exact P4 paid overlap.
+276,gonka1yal0ysgzc860zt3y8cds8656tnueusgymftvkw,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,49.060506444,1786.223371693,P4-GroupCap-source,49.060506444,1737.162865249,0.000000000,P4 exact payment exceeds this planned amount; final payout floored at zero.
+276,gonka1zktn8j65wlys8a8e38hqhf4y3x6m4x04zskkrx,P3-CAND-04,P3-CAND-04,pending_estimate_revalidation_required,partial_cpoc_damage,578.039630382,,,,,578.039630382,No exact P4 paid overlap.
+TOTAL,,,,,,99773.810455897,34944.788622168,,29619.785787646,5325.002834522,70154.024668251,

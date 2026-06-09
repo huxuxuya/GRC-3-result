@@ -1,0 +1,185 @@
+{
+  "settings": {
+    "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
+    "vesting_epochs": "150",
+    "deposit": "50000000ngonka",
+    "metadata": "https://github.com/fedortimokhov/GRC3",
+    "title": "GRC Proposal #3 - Restitution",
+    "summary": "Restitution payout for confirmed GRC Proposal #3 cases, adjusted for exact P4 address+epoch overlaps.",
+    "proposal_model": "proposal_2_style"
+  },
+  "cases": [
+    {
+      "case_family": "P3-CAND-01",
+      "title": "High miss rate / devshard issue",
+      "status": "approved_for_proposal_3",
+      "investigators": [
+        {
+          "name": "@Op***on",
+          "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+          "amount_gonka": "4600.000000000",
+          "comment": "Case investigator"
+        }
+      ],
+      "validators": [
+        {
+          "name": "@mi***ov",
+          "address": "gonka16j4zv6723mrnycwn0qgw0j48dr9qecyclxg5jh",
+          "amount_gonka": "3100.000000000",
+          "comment": "Case validator"
+        }
+      ],
+      "organizer": {
+        "name": "@Op***on",
+        "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+        "amount_gonka": "6250.000000000",
+        "comment": "Proposal coordinator / organizer"
+      }
+    },
+    {
+      "case_family": "P3-CAND-02",
+      "title": "Negative coin balance / settle-drop",
+      "status": "approved_for_proposal_3",
+      "investigators": [
+        {
+          "name": "@ma***ff",
+          "address": "gonka1gmuxdcxlsxn5z72elx77w9zym7yrgfxqgzg6ry",
+          "amount_gonka": "4600.000000000",
+          "comment": "Case investigator"
+        }
+      ],
+      "validators": [
+        {
+          "name": "@de***ww",
+          "address": "gonka1ppn53fu8q3pxvwwf8ycjf3c6nzlugs3hmw6a3q",
+          "amount_gonka": "3100.000000000",
+          "comment": "Case validator"
+        }
+      ],
+      "organizer": {
+        "name": "@Op***on",
+        "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+        "amount_gonka": "0.000000000",
+        "comment": "Coordinator validation"
+      }
+    },
+    {
+      "case_family": "P3-CAND-03",
+      "title": "Failed cPoC / preserved Kimi shortfall",
+      "status": "pending_second_validator_approval",
+      "investigators": [
+        {
+          "name": "@mi***ov",
+          "address": "gonka16j4zv6723mrnycwn0qgw0j48dr9qecyclxg5jh",
+          "amount_gonka": "4600.000000000",
+          "comment": "Case investigator"
+        }
+      ],
+      "validators": [
+        {
+          "name": "@de***ww",
+          "address": "gonka1ppn53fu8q3pxvwwf8ycjf3c6nzlugs3hmw6a3q",
+          "amount_gonka": "3100.000000000",
+          "comment": "Case validator"
+        },
+        {
+          "name": "@vo***on",
+          "address": "gonka197hqnwcl30x4js3egvaujjmfknlxy7rmfw3y6k",
+          "amount_gonka": "3100.000000000",
+          "comment": "Case validator"
+        }
+      ],
+      "organizer": {
+        "name": "@Op***on",
+        "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+        "amount_gonka": "0.000000000",
+        "comment": "Proposal organizer"
+      }
+    },
+    {
+      "case_family": "P3-CAND-04",
+      "title": "UpgradeProtectionWindow / CPoC misfire",
+      "status": "approved_for_proposal_3",
+      "investigators": [
+        {
+          "name": "@ma***ff",
+          "address": "gonka1gmuxdcxlsxn5z72elx77w9zym7yrgfxqgzg6ry",
+          "amount_gonka": "4600.000000000",
+          "comment": "Case investigator"
+        }
+      ],
+      "validators": [
+        {
+          "name": "@vo***on",
+          "address": "gonka197hqnwcl30x4js3egvaujjmfknlxy7rmfw3y6k",
+          "amount_gonka": "3100.000000000",
+          "comment": "Case validator"
+        },
+        {
+          "name": "@Op***on",
+          "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+          "amount_gonka": "3100.000000000",
+          "comment": "Case validator"
+        }
+      ],
+      "organizer": {
+        "name": "@Op***on",
+        "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+        "amount_gonka": "0.000000000",
+        "comment": "Proposal organizer"
+      }
+    },
+    {
+      "case_family": "P3-CAND-05",
+      "title": "ml3 hardware re-registration",
+      "status": "rejected_by_coordinator",
+      "investigators": [],
+      "validators": [],
+      "organizer": {
+        "name": "@Op***on",
+        "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+        "amount_gonka": "0.000000000",
+        "comment": "Proposal organizer"
+      }
+    },
+    {
+      "case_family": "P4-CAND-01",
+      "title": "Kimi Restitution, Epochs 265-276",
+      "status": "proposal_3_case_5_rejected_compensation_but_bounty_eligible",
+      "investigators": [
+        {
+          "name": "@vo***on",
+          "address": "gonka197hqnwcl30x4js3egvaujjmfknlxy7rmfw3y6k",
+          "amount_gonka": "4600.000000000",
+          "comment": "Published full-period calculation"
+        }
+      ],
+      "validators": [
+        {
+          "name": "@ma***ff",
+          "address": "gonka1gmuxdcxlsxn5z72elx77w9zym7yrgfxqgzg6ry",
+          "amount_gonka": "3100.000000000",
+          "comment": "Reviewed numbers as generally correct"
+        },
+        {
+          "name": "@mi***ov",
+          "address": "gonka16j4zv6723mrnycwn0qgw0j48dr9qecyclxg5jh",
+          "amount_gonka": "3100.000000000",
+          "comment": "Raised scope, denominator, proration, and reproducibility objections"
+        },
+        {
+          "name": "@Op***on",
+          "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+          "amount_gonka": "3100.000000000",
+          "comment": "Additional check: attack review"
+        }
+      ],
+      "organizer": {
+        "name": "@Op***on",
+        "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+        "amount_gonka": "0.000000000",
+        "comment": "Proposal organizer"
+      }
+    }
+  ]
+}
