@@ -56,11 +56,11 @@ The excess is recorded in the audit data and is not moved to any other row.
 
 | Case | Decision in this package | Final victim payout | Public evidence |
 |---|---|---:|---|
-| `P3-CAND-01` High miss rate / devshard issue | Included. Seven rows are retained, including the manual-review row present in the current settlement data. | `35109.923355683 GNK` | [`huxuxuya/grc-p3-cand01`](https://github.com/huxuxuya/grc-p3-cand01) |
-| `P3-CAND-02` Settle-drop / negative balance | Included after independent review of the affected set. | `1075.336150923 GNK` | [`gonkavip/unclaimed`](https://github.com/gonkavip/unclaimed), [`Dolper/GRC-case-2-settle-dropped`](https://github.com/Dolper/GRC-case-2-settle-dropped) |
-| `P3-CAND-03` Failed cPoC / preserved Kimi shortfall | Included for epoch `267`; epoch `265` extension is retained in the ledger but zeroed by exact P4 overlap. | `10262.057515369 GNK` | [`gonkalabs/GRC-e267-kimi_shortfall`](https://github.com/gonkalabs/GRC-e267-kimi_shortfall), [`Dolper/GRC-Case-3-Epoch-267`](https://github.com/Dolper/GRC-Case-3-Epoch-267) |
-| `P3-CAND-04` UpgradeProtectionWindow / cPoC misfire | Included with exact P4 overlap deductions applied row by row. | `23706.707646276 GNK` | [`gonkavip/payout276`](https://github.com/gonkavip/payout276), [`huxuxuya/GRC3 validation`](https://github.com/huxuxuya/GRC3/tree/main/validations/P3-CAND-04-upgrade-protection-cpoc-misfire-epoch-276) |
-| `P4-CAND-01` Kimi restitution aggregate, epochs 265-276 | Rejected as one aggregate compensation claim. Used only as already-paid overlap evidence and as bounty-eligible work. | `0.000000000 GNK` | [`votkon/gonka-kimi-restitution`](https://github.com/votkon/gonka-kimi-restitution), [`huxuxuya 265 attack review`](https://huxuxuya.github.io/265-attack/) |
+| Case 01: High miss rate / devshard issue | Included. Seven rows are retained, including the manual-review row present in the current settlement data. | `35109.923355683 GNK` | [`huxuxuya/grc-p3-cand01`](https://github.com/huxuxuya/grc-p3-cand01) |
+| Case 02: Settle-drop / negative balance | Included after independent review of the affected set. | `1075.336150923 GNK` | [`gonkavip/unclaimed`](https://github.com/gonkavip/unclaimed), [`Dolper/GRC-case-2-settle-dropped`](https://github.com/Dolper/GRC-case-2-settle-dropped) |
+| Case 03: Failed cPoC / preserved Kimi shortfall | Included for epoch `267`; epoch `265` extension is retained in the ledger but zeroed by exact P4 overlap. | `10262.057515369 GNK` | [`gonkalabs/GRC-e267-kimi_shortfall`](https://github.com/gonkalabs/GRC-e267-kimi_shortfall), [`Dolper/GRC-Case-3-Epoch-267`](https://github.com/Dolper/GRC-Case-3-Epoch-267) |
+| Case 04: UpgradeProtectionWindow / cPoC misfire | Included with exact P4 overlap deductions applied row by row. | `23706.707646276 GNK` | [`gonkavip/payout276`](https://github.com/gonkavip/payout276), [`huxuxuya/GRC3 validation`](https://github.com/huxuxuya/GRC3/tree/main/validations/P3-CAND-04-upgrade-protection-cpoc-misfire-epoch-276) |
+| Case 05: Kimi restitution aggregate, epochs 265-276 | Rejected as one aggregate compensation claim. Used only as already-paid overlap evidence and as bounty-eligible work. | `0.000000000 GNK` | [`votkon/gonka-kimi-restitution`](https://github.com/votkon/gonka-kimi-restitution), [`huxuxuya 265 attack review`](https://huxuxuya.github.io/265-attack/) |
 
 Private Telegram references are intentionally excluded from this public evidence
 package.
@@ -116,7 +116,7 @@ The verification script checks:
 
 - CSV totals against `docs/data/settlement.json`;
 - row-level overlap math with exact 9-decimal `ngonka` arithmetic;
-- case totals for `P3-CAND-01` through `P3-CAND-04`;
+- case totals for Case 01 through Case 04;
 - role/work total and the final proposal total;
 - that `votkon` is absent from validators for Case 3 and Case 4;
 - that generated proposal artifacts match deterministic rebuild output;

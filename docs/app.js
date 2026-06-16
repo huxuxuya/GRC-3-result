@@ -1,5 +1,12 @@
 const NGONKA = 1000000000n;
 const STORAGE_KEY = "grc3_role_config";
+const CASE_LABELS = {
+  "P3-CAND-01": "Case 01",
+  "P3-CAND-02": "Case 02",
+  "P3-CAND-03": "Case 03",
+  "P3-CAND-04": "Case 04",
+  "P4-CAND-01": "Case 05",
+};
 let settlement;
 let roleConfig;
 
@@ -23,6 +30,10 @@ function formatNgonka(value) {
 function shortAddress(address) {
   if (!address || address.length < 18) return address;
   return `${address.slice(0, 12)}...${address.slice(-8)}`;
+}
+
+function displayCase(caseFamily) {
+  return CASE_LABELS[caseFamily] || caseFamily;
 }
 
 function maskName(name) {
@@ -70,7 +81,7 @@ function renderSummary() {
 
 function fillFilters() {
   const cases = ["all", ...settlement.metadata.display_case_families];
-  $("case-filter").innerHTML = cases.map((item) => `<option value="${item}">${item === "all" ? "All" : item}</option>`).join("");
+  $("case-filter").innerHTML = cases.map((item) => `<option value="${item}">${item === "all" ? "All" : displayCase(item)}</option>`).join("");
   const epochs = ["all", ...new Set(settlement.rows.map((row) => row.epoch).sort((a, b) => a - b))];
   $("epoch-filter").innerHTML = epochs.map((item) => `<option value="${item}">${item === "all" ? "All" : item}</option>`).join("");
 }
@@ -103,7 +114,7 @@ function renderRows() {
       return `<tr class="${overlap ? "overlap" : ""}">
         <td>${row.epoch}</td>
         <td class="mono" title="${row.address}">${shortAddress(row.address)}</td>
-        <td><span class="badge">${row.case_family}</span></td>
+        <td><span class="badge" title="${row.case_family}">${displayCase(row.case_family)}</span></td>
         <td>${row.case_track}</td>
         <td class="num">${row.planned_amount_gonka}</td>
         <td class="num">${row.p4_paid_overlap_gonka}</td>
@@ -141,7 +152,7 @@ function renderAggregates() {
     "cases-body",
     settlement.totals.by_case.filter((item) => selectedCase === "all" || visibleCaseKeys.has(item.case_family)),
     [
-      { render: (item) => `<td><span class="badge">${item.case_family}</span></td>` },
+      { render: (item) => `<td><span class="badge" title="${item.case_family}">${displayCase(item.case_family)}</span></td>` },
       { render: (item) => `<td>${item.rows}</td>` },
       { render: (item) => `<td>${item.address_count}</td>` },
       { render: (item) => `<td class="num">${item.planned_amount_gonka}</td>` },
@@ -157,7 +168,7 @@ function renderAggregates() {
     settlement.totals.by_address.filter((item) => visibleAddressKeys.has(item.address)),
     [
       { render: (item) => `<td class="mono" title="${item.address}">${shortAddress(item.address)}</td>` },
-      { render: (item) => `<td>${item.cases.join(", ")}</td>` },
+      { render: (item) => `<td>${item.cases.map(displayCase).join(", ")}</td>` },
       { render: (item) => `<td>${item.epochs.join(", ")}</td>` },
       { render: (item) => `<td class="num">${item.planned_amount_gonka}</td>` },
       { render: (item) => `<td class="num">${item.p4_paid_overlap_gonka}</td>` },
@@ -173,7 +184,7 @@ function renderAggregates() {
       { render: (item) => `<td>${item.epoch}</td>` },
       { render: (item) => `<td>${item.rows}</td>` },
       { render: (item) => `<td>${item.address_count}</td>` },
-      { render: (item) => `<td>${item.cases.join(", ")}</td>` },
+      { render: (item) => `<td>${item.cases.map(displayCase).join(", ")}</td>` },
       { render: (item) => `<td class="num">${item.planned_amount_gonka}</td>` },
       { render: (item) => `<td class="num">${item.p4_paid_overlap_gonka}</td>` },
       { render: (item) => `<td class="num">${item.overlap_adjustment_gonka}</td>` },
@@ -185,7 +196,7 @@ function renderAggregates() {
     "case-epochs-body",
     settlement.totals.by_case_epoch.filter((item) => visibleCaseEpochKeys.has(`${item.case_family}|${item.epoch}`)),
     [
-      { render: (item) => `<td><span class="badge">${item.case_family}</span></td>` },
+      { render: (item) => `<td><span class="badge" title="${item.case_family}">${displayCase(item.case_family)}</span></td>` },
       { render: (item) => `<td>${item.epoch}</td>` },
       { render: (item) => `<td>${item.rows}</td>` },
       { render: (item) => `<td>${item.address_count}</td>` },
@@ -228,7 +239,7 @@ function renderRoles() {
         })
         .join("");
       return `<article class="case-role">
-        <h2>${caseItem.case_family}: ${caseItem.title} ${caseItem.status ? `<span class="badge">${caseItem.status}</span>` : ""}</h2>
+        <h2>${displayCase(caseItem.case_family)}: ${caseItem.title} ${caseItem.status ? `<span class="badge" title="${caseItem.case_family}">${caseItem.status}</span>` : ""}</h2>
         ${rows}
       </article>`;
     })
@@ -269,7 +280,7 @@ function renderRoleTotals() {
         <td class="mono" title="${row.address}">${shortAddress(row.address)}</td>
         <td>${[...row.names].join(", ")}</td>
         <td>${row.roles.length}</td>
-        <td>${[...row.cases].sort().join(", ")}</td>
+        <td>${[...row.cases].sort().map(displayCase).join(", ")}</td>
         <td class="num">${formatNgonka(row.amount)}</td>
       </tr>`).join("")
     : `<tr><td colspan="5">No non-zero role payouts.</td></tr>`;
