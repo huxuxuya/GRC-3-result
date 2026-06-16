@@ -173,7 +173,7 @@ def verify_readme() -> None:
         EXPECTED["role_payout_gonka"],
         EXPECTED["proposal_total_gonka"],
         VOTKON_ADDRESS,
-        "votkon is not a validator for Case 3 or Case 4",
+        "votkon is not a validator for Case 03 or Case 04",
         "proposal/proposal.json",
         "proposal/payout_breakdown.json",
     ):
