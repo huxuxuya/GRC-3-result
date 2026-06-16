@@ -1,6 +1,6 @@
 # GRC-3 Result
 
-Final public result package for RC Proposal #3. The repository contains the
+Final public result package for GRC Proposal #3. The repository contains the
 review summary, settlement data, role/work payouts, and chain-ready JSON that
 can be submitted to governance.
 
@@ -13,15 +13,15 @@ can be submitted to governance.
 
 ## Executive Summary
 
-RC Proposal #3 closes the confirmed GRC3 restitution package and separates two
+GRC Proposal #3 closes the confirmed GRC3 restitution package and separates two
 different payment classes:
 
 | Payment class | Amount | Chain representation |
 |---|---:|---|
 | Committee-confirmed damage before overlap deductions | `99773.810455897 GNK` | Settlement basis, before already-paid P4 deductions |
 | Victim restitution after exact P4 overlap deductions | `70154.024668251 GNK` | One `/inference.streamvesting.MsgBatchTransferWithVesting` message |
-| Committee review, investigation, validation, coordination work, and proposal submission | `51450.000000000 GNK` | Five `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
-| Total proposal spend | `121604.024668251 GNK` | `proposal/proposal.json` |
+| Committee review, investigation, validation, and coordination work | `50950.000000000 GNK` | Five `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
+| Total proposal spend | `121104.024668251 GNK` | `proposal/proposal.json` |
 
 The committee/work amount is not an additional victim-damage claim. It is a
 fixed work and bounty package for case investigation, independent validation,
@@ -52,7 +52,7 @@ final_payout = max(planned_amount - p4_paid_overlap, 0)
 Rows where P4 already paid more than the planned amount are floored at zero.
 The excess is recorded in the audit data and is not moved to any other row.
 
-## RC Case Review
+## GRC Case Review
 
 | Case | Decision in this package | Final victim payout | Public evidence |
 |---|---|---:|---|
@@ -60,18 +60,18 @@ The excess is recorded in the audit data and is not moved to any other row.
 | Case 02: Settle-drop / negative balance | Included after independent review of the affected set. | `1075.336150923 GNK` | [`gonkavip/unclaimed`](https://github.com/gonkavip/unclaimed), [`Dolper/GRC-case-2-settle-dropped`](https://github.com/Dolper/GRC-case-2-settle-dropped) |
 | Case 03: Failed cPoC / preserved Kimi shortfall | Included for epoch `267`; epoch `265` extension is retained in the ledger but zeroed by exact P4 overlap. | `10262.057515369 GNK` | [`gonkalabs/GRC-e267-kimi_shortfall`](https://github.com/gonkalabs/GRC-e267-kimi_shortfall), [`Dolper/GRC-Case-3-Epoch-267`](https://github.com/Dolper/GRC-Case-3-Epoch-267) |
 | Case 04: UpgradeProtectionWindow / cPoC misfire | Included with exact P4 overlap deductions applied row by row. | `23706.707646276 GNK` | [`gonkavip/payout276`](https://github.com/gonkavip/payout276), [`huxuxuya/GRC3 validation`](https://github.com/huxuxuya/GRC3/tree/main/validations/P3-CAND-04-upgrade-protection-cpoc-misfire-epoch-276) |
-| Case 05: Kimi restitution aggregate, epochs 265-276 | Rejected as one aggregate compensation claim. Used only as already-paid overlap evidence and as bounty-eligible work. | `0.000000000 GNK` | `@v****n` source calculation, [`huxuxuya 265 attack review`](https://huxuxuya.github.io/265-attack/) |
+| Case 05: Kimi restitution aggregate, epochs 265-276 | Rejected as one aggregate compensation claim. Used only as already-paid overlap evidence and as bounty-eligible work. | `0.000000000 GNK` | [`@v****n/gonka-kimi-restitution`](https://github.com/votkon/gonka-kimi-restitution), [`huxuxuya 265 attack review`](https://huxuxuya.github.io/265-attack/) |
 
 ## Committee Work Package
 
 The role package compensates completed work, not the size of any one person's
 claim. It covers investigation, validation, additional checks, attack review,
-and coordination across the RC Proposal #3 package.
+and coordination across the GRC Proposal #3 package.
 
 | Metric | Amount / Count |
 |---|---:|
 | Non-zero role lines | `13` |
-| Total role/work payout | `51450.000000000 GNK` |
+| Total role/work payout | `50950.000000000 GNK` |
 | Distinct payout addresses | `5` |
 
 | Case | Investigation / calculation | Validation / review | Coordination |
@@ -82,9 +82,9 @@ and coordination across the RC Proposal #3 package.
 | Case 04 | `@ma***ff` investigated the UpgradeProtectionWindow / cPoC misfire. | `@Op***on` validated the case. | `@Op***on` coordinated proposal packaging. |
 | Case 05 | `@v****n` published the full-period Kimi restitution calculation reviewed as Case 05. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
 
-The coordinator payout also includes a `500.000000000 GNK` proposal submission
-fee. It is included in the role/work total and grouped into the coordinator's
-community-pool spend message.
+The proposal deposit is `500.000000000 GNK`. It is not paid out as a separate
+coordinator fee; it remains the governance proposal deposit and is returned to
+the depositor if the proposal is not vetoed.
 
 ## Chain Payload
 
