@@ -18,8 +18,8 @@ sys.dont_write_bytecode = True
 
 EXPECTED = {
     "victim_payout_gonka": "70154.024668251",
-    "role_payout_gonka": "50950.000000000",
-    "proposal_total_gonka": "121104.024668251",
+    "role_payout_gonka": "51450.000000000",
+    "proposal_total_gonka": "121604.024668251",
     "planned_amount_gonka": "99773.810455897",
     "overlap_adjustment_gonka": "29619.785787646",
     "p4_paid_overlap_gonka": "34944.788622168",

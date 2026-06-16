@@ -54,7 +54,7 @@ function gonkaAddressOk(value) {
 function renderSummary() {
   const total = settlement.totals.global;
   const cards = [
-    ["Source total", total.planned_amount_gonka],
+    ["Confirmed damage", total.planned_amount_gonka],
     ["Already paid by P4", total.p4_paid_overlap_gonka],
     ["Deducted from payout", total.overlap_adjustment_gonka],
     ["Final victim payout", total.final_payout_gonka],

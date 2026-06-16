@@ -2,10 +2,10 @@
   "totals": {
     "victim_payout_ngonka": "70154024668251",
     "victim_payout_gonka": "70154.024668251",
-    "role_payout_ngonka": "50950000000000",
-    "role_payout_gonka": "50950.000000000",
-    "proposal_total_ngonka": "121104024668251",
-    "proposal_total_gonka": "121104.024668251",
+    "role_payout_ngonka": "51450000000000",
+    "role_payout_gonka": "51450.000000000",
+    "proposal_total_ngonka": "121604024668251",
+    "proposal_total_gonka": "121604.024668251",
     "victim_recipient_count": 40,
     "role_entry_count": 13,
     "role_message_count": 5
@@ -1213,9 +1213,9 @@
       "role": "organizer",
       "name": "@Op***on",
       "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
-      "amount_ngonka": "6250000000000",
-      "amount_gonka": "6250.000000000",
-      "comment": "Proposal coordinator / organizer"
+      "amount_ngonka": "6750000000000",
+      "amount_gonka": "6750.000000000",
+      "comment": "Proposal coordinator / organizer, includes 500 GNK proposal submission fee"
     },
     {
       "category": "role",

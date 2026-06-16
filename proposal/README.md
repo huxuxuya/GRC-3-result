@@ -10,8 +10,8 @@ This directory contains the final chain-ready RC Proposal #3 payout artifacts.
 Totals:
 
 - Victim restitution: `70154.024668251 GNK`
-- Committee/work payout: `50950.000000000 GNK`
-- Proposal total: `121104.024668251 GNK`
+- Committee/work payout: `51450.000000000 GNK`
+- Proposal total: `121604.024668251 GNK`
 
 Regenerate from committed source data:
 

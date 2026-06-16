@@ -18,9 +18,10 @@ different payment classes:
 
 | Payment class | Amount | Chain representation |
 |---|---:|---|
+| Committee-confirmed damage before overlap deductions | `99773.810455897 GNK` | Settlement basis, before already-paid P4 deductions |
 | Victim restitution after exact P4 overlap deductions | `70154.024668251 GNK` | One `/inference.streamvesting.MsgBatchTransferWithVesting` message |
-| Committee review, investigation, validation, and coordination work | `50950.000000000 GNK` | Five `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
-| Total proposal spend | `121104.024668251 GNK` | `proposal/proposal.json` |
+| Committee review, investigation, validation, coordination work, and proposal submission | `51450.000000000 GNK` | Five `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
+| Total proposal spend | `121604.024668251 GNK` | `proposal/proposal.json` |
 
 The committee/work amount is not an additional victim-damage claim. It is a
 fixed work and bounty package for case investigation, independent validation,
@@ -38,7 +39,7 @@ final_payout = max(planned_amount - p4_paid_overlap, 0)
 
 | Metric | Amount / Count |
 |---|---:|
-| Planned source total | `99773.810455897 GNK` |
+| Committee-confirmed damage before overlap deductions | `99773.810455897 GNK` |
 | Exact P4 paid overlap | `34944.788622168 GNK` |
 | Deducted from Proposal #3 payout | `29619.785787646 GNK` |
 | P4 overpaid amount recorded for audit only | `5325.002834522 GNK` |
@@ -73,7 +74,7 @@ and coordination across the RC Proposal #3 package.
 | Metric | Amount / Count |
 |---|---:|
 | Non-zero role lines | `13` |
-| Total role/work payout | `50950.000000000 GNK` |
+| Total role/work payout | `51450.000000000 GNK` |
 | Distinct payout addresses | `5` |
 
 votkon is not a validator for Case 3 or Case 4. The validator role was
@@ -83,6 +84,10 @@ is `4600.000000000 GNK` to
 Kimi restitution calculation used during review of the rejected P4 aggregate.
 That role line is bounty/work compensation and does not approve the P4 aggregate
 as a victim payout.
+
+The coordinator payout also includes a `500.000000000 GNK` proposal submission
+fee. It is included in the role/work total and grouped into the coordinator's
+community-pool spend message.
 
 ## Chain Payload
 
