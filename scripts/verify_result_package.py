@@ -34,7 +34,7 @@ EXPECTED_CASE_FINAL = {
     "P3-CAND-04": "23706.707646276",
 }
 
-VOTKON_ADDRESS = "gonka123pr0p0salv96xvne9qln70x3usvpyscug5f9a"
+CASE_05_INVESTIGATOR_ADDRESS = "gonka123pr0p0salv96xvne9qln70x3usvpyscug5f9a"
 
 
 def load_json(path: str) -> dict:
@@ -122,7 +122,7 @@ def verify_csv_against_settlement(settlement: dict) -> None:
 def verify_roles(role_config: dict) -> None:
     role_total = 0
     role_entries = 0
-    votkon_entries = []
+    case_05_investigator_entries = []
     for case_item in role_config["cases"]:
         for role_key, role_name in (("investigators", "investigator"), ("validators", "validator")):
             for person in case_item.get(role_key, []):
@@ -130,8 +130,8 @@ def verify_roles(role_config: dict) -> None:
                 if amount > 0:
                     role_total += amount
                     role_entries += 1
-                if person.get("address") == VOTKON_ADDRESS:
-                    votkon_entries.append((case_item["case_family"], role_name, amount))
+                if person.get("address") == CASE_05_INVESTIGATOR_ADDRESS:
+                    case_05_investigator_entries.append((case_item["case_family"], role_name, amount))
         person = case_item.get("organizer") or {}
         amount = 0 if case_item.get("status") == "rejected_by_coordinator" else amount_to_ngonka(person.get("amount_gonka"))
         if amount > 0:
@@ -140,9 +140,9 @@ def verify_roles(role_config: dict) -> None:
 
     require(format_ngonka(role_total) == EXPECTED["role_payout_gonka"], "role payout total mismatch")
     require(role_entries == 13, "role entry count mismatch")
-    require(("P3-CAND-03", "validator", amount_to_ngonka("3100.000000000")) not in votkon_entries, "votkon is validator in case 3")
-    require(("P3-CAND-04", "validator", amount_to_ngonka("3100.000000000")) not in votkon_entries, "votkon is validator in case 4")
-    require(votkon_entries == [("P4-CAND-01", "investigator", amount_to_ngonka("4600.000000000"))], "unexpected votkon role entries")
+    require(("P3-CAND-03", "validator", amount_to_ngonka("3100.000000000")) not in case_05_investigator_entries, "case 05 investigator is validator in case 3")
+    require(("P3-CAND-04", "validator", amount_to_ngonka("3100.000000000")) not in case_05_investigator_entries, "case 05 investigator is validator in case 4")
+    require(case_05_investigator_entries == [("P4-CAND-01", "investigator", amount_to_ngonka("4600.000000000"))], "unexpected case 05 investigator role entries")
 
 
 def verify_proposal_artifacts(settlement: dict, role_config: dict) -> None:
@@ -176,9 +176,7 @@ def verify_readme() -> None:
         "Case 02 | `@ma***ff` investigated",
         "Case 03 | `@mi***ov` investigated",
         "Case 04 | `@ma***ff` investigated",
-        "Case 05 | `@vo***on` published",
-        "not a validator for Case 03",
-        "not a validator for Case 04",
+        "Case 05 | `@v****n` published",
         "proposal/proposal.json",
         "proposal/payout_breakdown.json",
     ):

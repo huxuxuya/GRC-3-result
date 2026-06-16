@@ -60,7 +60,7 @@ The excess is recorded in the audit data and is not moved to any other row.
 | Case 02: Settle-drop / negative balance | Included after independent review of the affected set. | `1075.336150923 GNK` | [`gonkavip/unclaimed`](https://github.com/gonkavip/unclaimed), [`Dolper/GRC-case-2-settle-dropped`](https://github.com/Dolper/GRC-case-2-settle-dropped) |
 | Case 03: Failed cPoC / preserved Kimi shortfall | Included for epoch `267`; epoch `265` extension is retained in the ledger but zeroed by exact P4 overlap. | `10262.057515369 GNK` | [`gonkalabs/GRC-e267-kimi_shortfall`](https://github.com/gonkalabs/GRC-e267-kimi_shortfall), [`Dolper/GRC-Case-3-Epoch-267`](https://github.com/Dolper/GRC-Case-3-Epoch-267) |
 | Case 04: UpgradeProtectionWindow / cPoC misfire | Included with exact P4 overlap deductions applied row by row. | `23706.707646276 GNK` | [`gonkavip/payout276`](https://github.com/gonkavip/payout276), [`huxuxuya/GRC3 validation`](https://github.com/huxuxuya/GRC3/tree/main/validations/P3-CAND-04-upgrade-protection-cpoc-misfire-epoch-276) |
-| Case 05: Kimi restitution aggregate, epochs 265-276 | Rejected as one aggregate compensation claim. Used only as already-paid overlap evidence and as bounty-eligible work. | `0.000000000 GNK` | [`votkon/gonka-kimi-restitution`](https://github.com/votkon/gonka-kimi-restitution), [`huxuxuya 265 attack review`](https://huxuxuya.github.io/265-attack/) |
+| Case 05: Kimi restitution aggregate, epochs 265-276 | Rejected as one aggregate compensation claim. Used only as already-paid overlap evidence and as bounty-eligible work. | `0.000000000 GNK` | `@v****n` source calculation, [`huxuxuya 265 attack review`](https://huxuxuya.github.io/265-attack/) |
 
 ## Committee Work Package
 
@@ -78,9 +78,9 @@ and coordination across the RC Proposal #3 package.
 |---|---|---|---|
 | Case 01 | `@Op***on` investigated the high miss-rate / devshard issue. | `@mi***ov` validated the case. | `@Op***on` coordinated proposal packaging. |
 | Case 02 | `@ma***ff` investigated the settle-drop / negative balance case. | `@de***ww` validated the affected set. | `@Op***on` coordinated proposal packaging. |
-| Case 03 | `@mi***ov` investigated the failed cPoC / Kimi shortfall case. | `@de***ww` validated the case; `votkon` is not a validator for Case 03. | `@Op***on` coordinated proposal packaging. |
-| Case 04 | `@ma***ff` investigated the UpgradeProtectionWindow / cPoC misfire. | `@Op***on` validated the case; `votkon` is not a validator for Case 04. | `@Op***on` coordinated proposal packaging. |
-| Case 05 | `@vo***on` published the full-period Kimi restitution calculation reviewed as Case 05. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
+| Case 03 | `@mi***ov` investigated the failed cPoC / Kimi shortfall case. | `@de***ww` validated the case. | `@Op***on` coordinated proposal packaging. |
+| Case 04 | `@ma***ff` investigated the UpgradeProtectionWindow / cPoC misfire. | `@Op***on` validated the case. | `@Op***on` coordinated proposal packaging. |
+| Case 05 | `@v****n` published the full-period Kimi restitution calculation reviewed as Case 05. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
 
 The coordinator payout also includes a `500.000000000 GNK` proposal submission
 fee. It is included in the role/work total and grouped into the coordinator's
