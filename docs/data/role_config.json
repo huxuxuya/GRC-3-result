@@ -5,7 +5,7 @@
     "deposit": "50000000ngonka",
     "metadata": "https://github.com/huxuxuya/GRC-3-result",
     "title": "GRC Proposal #3 - Restitution",
-    "summary": "Restitution payout for confirmed GRC Proposal #3 cases, with previous P4 payments deducted where the same address and epoch were already compensated.",
+    "summary": "Restitution payout for confirmed GRC Proposal #3 cases, with Case 05 payments from proposal_id=67 deducted where the same address and epoch were already compensated.",
     "proposal_model": "proposal_2_style"
   },
   "cases": [
