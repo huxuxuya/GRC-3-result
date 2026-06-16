@@ -2,7 +2,7 @@
   "settings": {
     "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
     "vesting_epochs": "150",
-    "deposit": "50000000ngonka",
+    "deposit": "500000000000ngonka",
     "metadata": "https://github.com/huxuxuya/GRC-3-result",
     "title": "GRC Proposal #3 - Restitution",
     "summary": "Restitution payout for confirmed GRC Proposal #3 cases, with Case 05 payments from proposal_id=67 deducted where the same address and epoch were already compensated.",
