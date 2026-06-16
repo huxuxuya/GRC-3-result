@@ -62,9 +62,6 @@ The excess is recorded in the audit data and is not moved to any other row.
 | Case 04: UpgradeProtectionWindow / cPoC misfire | Included with exact P4 overlap deductions applied row by row. | `23706.707646276 GNK` | [`gonkavip/payout276`](https://github.com/gonkavip/payout276), [`huxuxuya/GRC3 validation`](https://github.com/huxuxuya/GRC3/tree/main/validations/P3-CAND-04-upgrade-protection-cpoc-misfire-epoch-276) |
 | Case 05: Kimi restitution aggregate, epochs 265-276 | Rejected as one aggregate compensation claim. Used only as already-paid overlap evidence and as bounty-eligible work. | `0.000000000 GNK` | [`votkon/gonka-kimi-restitution`](https://github.com/votkon/gonka-kimi-restitution), [`huxuxuya 265 attack review`](https://huxuxuya.github.io/265-attack/) |
 
-Private Telegram references are intentionally excluded from this public evidence
-package.
-
 ## Committee Work Package
 
 The role package compensates completed work, not the size of any one person's
@@ -77,13 +74,13 @@ and coordination across the RC Proposal #3 package.
 | Total role/work payout | `51450.000000000 GNK` |
 | Distinct payout addresses | `5` |
 
-votkon is not a validator for Case 03 or Case 04. The validator role was
-removed by committee vote. The only non-zero `votkon` role line in this package
-is `4600.000000000 GNK` to
-`gonka123pr0p0salv96xvne9qln70x3usvpyscug5f9a` for publishing the full-period
-Kimi restitution calculation reviewed as Case 05. That role line is
-bounty/work compensation for Case 05 review material and does not approve Case
-05 as a victim payout.
+| Case | Investigation / calculation | Validation / review | Coordination |
+|---|---|---|---|
+| Case 01 | `@Op***on` investigated the high miss-rate / devshard issue. | `@mi***ov` validated the case. | `@Op***on` coordinated proposal packaging. |
+| Case 02 | `@ma***ff` investigated the settle-drop / negative balance case. | `@de***ww` validated the affected set. | `@Op***on` coordinated proposal packaging. |
+| Case 03 | `@mi***ov` investigated the failed cPoC / Kimi shortfall case. | `@de***ww` validated the case; `votkon` is not a validator for Case 03. | `@Op***on` coordinated proposal packaging. |
+| Case 04 | `@ma***ff` investigated the UpgradeProtectionWindow / cPoC misfire. | `@Op***on` validated the case; `votkon` is not a validator for Case 04. | `@Op***on` coordinated proposal packaging. |
+| Case 05 | `@vo***on` published the full-period Kimi restitution calculation reviewed as Case 05. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
 
 The coordinator payout also includes a `500.000000000 GNK` proposal submission
 fee. It is included in the role/work total and grouped into the coordinator's
@@ -118,6 +115,4 @@ The verification script checks:
 - row-level overlap math with exact 9-decimal `ngonka` arithmetic;
 - case totals for Case 01 through Case 04;
 - role/work total and the final proposal total;
-- that `votkon` is absent from validators for Case 03 and Case 04;
 - that generated proposal artifacts match deterministic rebuild output;
-- that this README includes the final totals and no private Telegram links.
