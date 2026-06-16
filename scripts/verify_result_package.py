@@ -24,6 +24,7 @@ EXPECTED = {
     "overlap_adjustment_gonka": "29619.785787646",
     "p4_paid_overlap_gonka": "34944.788622168",
     "p4_overpaid_gonka": "5325.002834522",
+    "metadata": "https://github.com/huxuxuya/GRC-3-result",
 }
 
 EXPECTED_CASE_FINAL = {
@@ -152,6 +153,7 @@ def verify_proposal_artifacts(settlement: dict, role_config: dict) -> None:
 
     require(proposal == expected_proposal, "proposal/proposal.json does not match deterministic rebuild")
     require(breakdown == expected_breakdown, "proposal/payout_breakdown.json does not match deterministic rebuild")
+    require(proposal["metadata"] == EXPECTED["metadata"], "proposal metadata URL mismatch")
     require(breakdown["totals"]["victim_payout_gonka"] == EXPECTED["victim_payout_gonka"], "victim payout total mismatch")
     require(breakdown["totals"]["role_payout_gonka"] == EXPECTED["role_payout_gonka"], "role payout total mismatch")
     require(breakdown["totals"]["proposal_total_gonka"] == EXPECTED["proposal_total_gonka"], "proposal total mismatch")
