@@ -81,12 +81,6 @@
           "address": "gonka1ppn53fu8q3pxvwwf8ycjf3c6nzlugs3hmw6a3q",
           "amount_gonka": "3100.000000000",
           "comment": "Case validator"
-        },
-        {
-          "name": "@vo***on",
-          "address": "gonka197hqnwcl30x4js3egvaujjmfknlxy7rmfw3y6k",
-          "amount_gonka": "3100.000000000",
-          "comment": "Case validator"
         }
       ],
       "organizer": {
@@ -109,12 +103,6 @@
         }
       ],
       "validators": [
-        {
-          "name": "@vo***on",
-          "address": "gonka197hqnwcl30x4js3egvaujjmfknlxy7rmfw3y6k",
-          "amount_gonka": "3100.000000000",
-          "comment": "Case validator"
-        },
         {
           "name": "@Op***on",
           "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
@@ -149,7 +137,7 @@
       "investigators": [
         {
           "name": "@vo***on",
-          "address": "gonka197hqnwcl30x4js3egvaujjmfknlxy7rmfw3y6k",
+          "address": "gonka123pr0p0salv96xvne9qln70x3usvpyscug5f9a",
           "amount_gonka": "4600.000000000",
           "comment": "Published full-period calculation"
         }

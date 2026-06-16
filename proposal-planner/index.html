@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gonka Proposal Launch Planner</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Gonka Proposal Launch Planner</h1>
+        <p>Plan a proposal vote so it ends 30-60 minutes before an epoch closes.</p>
+      </div>
+      <div class="actions">
+        <button id="refresh" type="button">Refresh chain data</button>
+        <button id="fit-target" type="button">Fit target</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="status" class="notice" hidden></section>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="controls">
+        <label>
+          Node API
+          <input id="node-url" value="http://node1.gonka.ai:8000">
+        </label>
+        <label>
+          Timezone
+          <input id="timezone-offset" placeholder="UTC+03:00">
+        </label>
+        <label>
+          Proposal start
+          <input id="start-time" type="datetime-local" step="60">
+        </label>
+        <label>
+          Start block estimate
+          <input id="start-height" readonly>
+        </label>
+      </section>
+
+      <section class="planner">
+        <div class="planner-header">
+          <div>
+            <h2>Timeline</h2>
+            <p id="timeline-caption">Loading chain state...</p>
+          </div>
+          <div class="legend">
+            <span><i class="swatch now"></i>Now</span>
+            <span><i class="swatch vote"></i>Vote</span>
+            <span><i class="swatch target"></i>Target window</span>
+          </div>
+        </div>
+        <div class="timeline-wrap">
+          <svg id="timeline" viewBox="0 0 1200 300" role="img" aria-label="Proposal planning timeline"></svg>
+        </div>
+      </section>
+
+      <section class="details">
+        <article>
+          <h2>Proposal Plan</h2>
+          <dl id="plan-details"></dl>
+        </article>
+        <article>
+          <h2>Epoch Windows</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Epoch</th>
+                  <th>Start</th>
+                  <th>End</th>
+                  <th class="num">Blocks</th>
+                  <th>Target end window</th>
+                </tr>
+              </thead>
+              <tbody id="epochs-body"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
