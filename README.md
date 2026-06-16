@@ -19,7 +19,7 @@ different payment classes:
 | Payment class | Amount | Chain representation |
 |---|---:|---|
 | Victim restitution after exact P4 overlap deductions | `70154.024668251 GNK` | One `/inference.streamvesting.MsgBatchTransferWithVesting` message |
-| Committee review, investigation, validation, and coordination work | `50950.000000000 GNK` | Thirteen `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
+| Committee review, investigation, validation, and coordination work | `50950.000000000 GNK` | Five `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
 | Total proposal spend | `121104.024668251 GNK` | `proposal/proposal.json` |
 
 The committee/work amount is not an additional victim-damage claim. It is a
@@ -92,7 +92,7 @@ as a victim payout.
 the committed source data. It contains:
 
 - one victim vesting batch with `40` positive recipients;
-- thirteen committee/work `MsgCommunityPoolSpend` messages;
+- five committee/work `MsgCommunityPoolSpend` messages, grouped by recipient;
 - `deposit`, `metadata`, `title`, and `summary` from
   [`docs/data/role_config.json`](docs/data/role_config.json).
 

@@ -156,9 +156,12 @@ def verify_proposal_artifacts(settlement: dict, role_config: dict) -> None:
     require(breakdown["totals"]["role_payout_gonka"] == EXPECTED["role_payout_gonka"], "role payout total mismatch")
     require(breakdown["totals"]["proposal_total_gonka"] == EXPECTED["proposal_total_gonka"], "proposal total mismatch")
     require(breakdown["totals"]["victim_recipient_count"] == 40, "victim recipient count mismatch")
-    require(breakdown["totals"]["role_message_count"] == 13, "role message count mismatch")
-    require(len(proposal["messages"]) == 14, "proposal message count mismatch")
+    require(breakdown["totals"]["role_entry_count"] == 13, "role entry count mismatch")
+    require(breakdown["totals"]["role_message_count"] == 5, "role message count mismatch")
+    require(len(proposal["messages"]) == 6, "proposal message count mismatch")
     require(proposal["messages"][0]["@type"] == "/inference.streamvesting.MsgBatchTransferWithVesting", "first proposal message is not victim vesting batch")
+    community_recipients = [message["recipient"] for message in proposal["messages"][1:]]
+    require(len(community_recipients) == len(set(community_recipients)), "community spend messages are not grouped by recipient")
 
 
 def verify_readme() -> None:

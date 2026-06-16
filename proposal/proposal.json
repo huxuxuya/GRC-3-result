@@ -374,95 +374,7 @@
       "amount": [
         {
           "denom": "ngonka",
-          "amount": "4600000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka16j4zv6723mrnycwn0qgw0j48dr9qecyclxg5jh",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "3100000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "6250000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka1gmuxdcxlsxn5z72elx77w9zym7yrgfxqgzg6ry",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "4600000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka1ppn53fu8q3pxvwwf8ycjf3c6nzlugs3hmw6a3q",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "3100000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka16j4zv6723mrnycwn0qgw0j48dr9qecyclxg5jh",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "4600000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka1ppn53fu8q3pxvwwf8ycjf3c6nzlugs3hmw6a3q",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "3100000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka1gmuxdcxlsxn5z72elx77w9zym7yrgfxqgzg6ry",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "4600000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "3100000000000"
+          "amount": "17050000000000"
         }
       ]
     },
@@ -480,33 +392,33 @@
     {
       "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
       "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka1gmuxdcxlsxn5z72elx77w9zym7yrgfxqgzg6ry",
-      "amount": [
-        {
-          "denom": "ngonka",
-          "amount": "3100000000000"
-        }
-      ]
-    },
-    {
-      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
-      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
       "recipient": "gonka16j4zv6723mrnycwn0qgw0j48dr9qecyclxg5jh",
       "amount": [
         {
           "denom": "ngonka",
-          "amount": "3100000000000"
+          "amount": "10800000000000"
         }
       ]
     },
     {
       "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
       "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
-      "recipient": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
+      "recipient": "gonka1gmuxdcxlsxn5z72elx77w9zym7yrgfxqgzg6ry",
       "amount": [
         {
           "denom": "ngonka",
-          "amount": "3100000000000"
+          "amount": "12300000000000"
+        }
+      ]
+    },
+    {
+      "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
+      "authority": "gonka10d07y265gmmuvt4z0w9aw880jnsr700j2h5m33",
+      "recipient": "gonka1ppn53fu8q3pxvwwf8ycjf3c6nzlugs3hmw6a3q",
+      "amount": [
+        {
+          "denom": "ngonka",
+          "amount": "6200000000000"
         }
       ]
     }

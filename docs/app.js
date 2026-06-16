@@ -359,11 +359,15 @@ function buildProposalArtifacts() {
   const roleBreakdown = allRoleEntries()
     .filter((entry) => BigInt(entry.amount_ngonka) > 0n)
     .map((entry) => ({ category: "role", ...entry }));
-  const roleMessages = roleBreakdown.map((entry) => ({
+  const roleTotalsByAddress = new Map();
+  roleBreakdown.forEach((entry) => {
+    roleTotalsByAddress.set(entry.address, (roleTotalsByAddress.get(entry.address) || 0n) + BigInt(entry.amount_ngonka));
+  });
+  const roleMessages = [...roleTotalsByAddress.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([address, amount]) => ({
     "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
     authority: settings.authority,
-    recipient: entry.address,
-    amount: [{ denom: "ngonka", amount: entry.amount_ngonka }],
+    recipient: address,
+    amount: [{ denom: "ngonka", amount: amount.toString() }],
   }));
   const proposal = {
     messages: [
@@ -392,6 +396,7 @@ function buildProposalArtifacts() {
       proposal_total_ngonka: (victimTotal + roleTotal).toString(),
       proposal_total_gonka: formatNgonka(victimTotal + roleTotal),
       victim_recipient_count: outputs.length,
+      role_entry_count: roleBreakdown.length,
       role_message_count: roleMessages.length,
     },
     entries: [...victimBreakdown, ...roleBreakdown],

@@ -4,7 +4,7 @@ This directory contains the final chain-ready RC Proposal #3 payout artifacts.
 
 | File | Purpose |
 |---|---|
-| [`proposal.json`](proposal.json) | Governance payload with victim vesting batch and committee/work payments. |
+| [`proposal.json`](proposal.json) | Governance payload with victim vesting batch and recipient-grouped committee/work payments. |
 | [`payout_breakdown.json`](payout_breakdown.json) | Audit breakdown for every victim row and every committee/work role line. |
 
 Totals:

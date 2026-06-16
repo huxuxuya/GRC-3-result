@@ -113,14 +113,17 @@ def build_artifacts(settlement: dict, role_config: dict) -> tuple[dict, dict]:
         for entry in all_role_entries(role_config)
         if int(entry["amount_ngonka"]) > 0
     ]
+    role_totals_by_address: dict[str, int] = {}
+    for entry in role_breakdown:
+        role_totals_by_address[entry["address"]] = role_totals_by_address.get(entry["address"], 0) + int(entry["amount_ngonka"])
     role_messages = [
         {
             "@type": "/cosmos.distribution.v1beta1.MsgCommunityPoolSpend",
             "authority": settings["authority"],
-            "recipient": entry["address"],
-            "amount": [{"denom": "ngonka", "amount": entry["amount_ngonka"]}],
+            "recipient": address,
+            "amount": [{"denom": "ngonka", "amount": str(amount)}],
         }
-        for entry in role_breakdown
+        for address, amount in sorted(role_totals_by_address.items())
     ]
 
     proposal = {
@@ -150,6 +153,7 @@ def build_artifacts(settlement: dict, role_config: dict) -> tuple[dict, dict]:
             "proposal_total_ngonka": str(victim_total + role_total),
             "proposal_total_gonka": format_ngonka(victim_total + role_total),
             "victim_recipient_count": len(outputs),
+            "role_entry_count": len(role_breakdown),
             "role_message_count": len(role_messages),
         },
         "entries": [*victim_breakdown, *role_breakdown],
