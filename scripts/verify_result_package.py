@@ -18,8 +18,8 @@ sys.dont_write_bytecode = True
 
 EXPECTED = {
     "victim_payout_gonka": "70154.024668251",
-    "role_payout_gonka": "50950.000000000",
-    "proposal_total_gonka": "121104.024668251",
+    "role_payout_gonka": "47850.000000000",
+    "proposal_total_gonka": "118004.024668251",
     "planned_amount_gonka": "99773.810455897",
     "overlap_adjustment_gonka": "29619.785787646",
     "p4_paid_overlap_gonka": "34944.788622168",
@@ -140,7 +140,7 @@ def verify_roles(role_config: dict) -> None:
             role_entries += 1
 
     require(format_ngonka(role_total) == EXPECTED["role_payout_gonka"], "role payout total mismatch")
-    require(role_entries == 13, "role entry count mismatch")
+    require(role_entries == 12, "role entry count mismatch")
     require(("P3-CAND-03", "validator", amount_to_ngonka("3100.000000000")) not in case_05_investigator_entries, "case 05 investigator is validator in case 3")
     require(("P3-CAND-04", "validator", amount_to_ngonka("3100.000000000")) not in case_05_investigator_entries, "case 05 investigator is validator in case 4")
     require(case_05_investigator_entries == [("P4-CAND-01", "investigator", amount_to_ngonka("4600.000000000"))], "unexpected case 05 investigator role entries")
@@ -160,7 +160,7 @@ def verify_proposal_artifacts(settlement: dict, role_config: dict) -> None:
     require(breakdown["totals"]["role_payout_gonka"] == EXPECTED["role_payout_gonka"], "role payout total mismatch")
     require(breakdown["totals"]["proposal_total_gonka"] == EXPECTED["proposal_total_gonka"], "proposal total mismatch")
     require(breakdown["totals"]["victim_recipient_count"] == 40, "victim recipient count mismatch")
-    require(breakdown["totals"]["role_entry_count"] == 13, "role entry count mismatch")
+    require(breakdown["totals"]["role_entry_count"] == 12, "role entry count mismatch")
     require(breakdown["totals"]["role_message_count"] == 5, "role message count mismatch")
     require(len(proposal["messages"]) == 6, "proposal message count mismatch")
     require(proposal["messages"][0]["@type"] == "/inference.streamvesting.MsgBatchTransferWithVesting", "first proposal message is not victim vesting batch")

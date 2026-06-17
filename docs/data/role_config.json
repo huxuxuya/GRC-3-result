@@ -154,12 +154,6 @@
           "address": "gonka16j4zv6723mrnycwn0qgw0j48dr9qecyclxg5jh",
           "amount_gonka": "3100.000000000",
           "comment": "Raised scope, denominator, proration, and reproducibility objections"
-        },
-        {
-          "name": "@Op***on",
-          "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
-          "amount_gonka": "3100.000000000",
-          "comment": "Additional check: attack review"
         }
       ],
       "organizer": {

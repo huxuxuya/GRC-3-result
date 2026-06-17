@@ -2,12 +2,12 @@
   "totals": {
     "victim_payout_ngonka": "70154024668251",
     "victim_payout_gonka": "70154.024668251",
-    "role_payout_ngonka": "50950000000000",
-    "role_payout_gonka": "50950.000000000",
-    "proposal_total_ngonka": "121104024668251",
-    "proposal_total_gonka": "121104.024668251",
+    "role_payout_ngonka": "47850000000000",
+    "role_payout_gonka": "47850.000000000",
+    "proposal_total_ngonka": "118004024668251",
+    "proposal_total_gonka": "118004.024668251",
     "victim_recipient_count": 40,
-    "role_entry_count": 13,
+    "role_entry_count": 12,
     "role_message_count": 5
   },
   "entries": [
@@ -1306,16 +1306,6 @@
       "amount_ngonka": "3100000000000",
       "amount_gonka": "3100.000000000",
       "comment": "Raised scope, denominator, proration, and reproducibility objections"
-    },
-    {
-      "category": "role",
-      "case_family": "P4-CAND-01",
-      "role": "validator",
-      "name": "@Op***on",
-      "address": "gonka100s7x2t0npruu9ta02306qfmaened3vg3a9dn6",
-      "amount_ngonka": "3100000000000",
-      "amount_gonka": "3100.000000000",
-      "comment": "Additional check: attack review"
     }
   ]
 }

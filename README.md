@@ -20,8 +20,8 @@ different payment classes:
 |---|---:|---|
 | Committee-confirmed damage before overlap deductions | `99773.810455897 GNK` | Settlement basis, before already-paid P4 deductions |
 | Victim restitution after exact P4 overlap deductions | `70154.024668251 GNK` | One `/inference.streamvesting.MsgBatchTransferWithVesting` message |
-| Committee review, investigation, validation, and coordination work | `50950.000000000 GNK` | Five `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
-| Total proposal spend | `121104.024668251 GNK` | `proposal/proposal.json` |
+| Committee review, investigation, validation, and coordination work | `47850.000000000 GNK` | Five `/cosmos.distribution.v1beta1.MsgCommunityPoolSpend` messages |
+| Total proposal spend | `118004.024668251 GNK` | `proposal/proposal.json` |
 
 The committee/work amount is not an additional victim-damage claim. It is a
 fixed work and bounty package for case investigation, independent validation,
@@ -71,7 +71,7 @@ and coordination across the GRC Proposal #3 package.
 | Metric | Amount / Count |
 |---|---:|
 | Non-zero role lines | `13` |
-| Total role/work payout | `50950.000000000 GNK` |
+| Total role/work payout | `47850.000000000 GNK` |
 | Distinct payout addresses | `5` |
 
 | Case | Investigation / calculation | Validation / review | Coordination |
@@ -80,7 +80,7 @@ and coordination across the GRC Proposal #3 package.
 | Case 02 | `@ma***ff` investigated the settle-drop / negative balance case. | `@de***ww` validated the affected set. | `@Op***on` coordinated proposal packaging. |
 | Case 03 | `@mi***ov` investigated the failed cPoC / Kimi shortfall case. | `@de***ww` validated the case. | `@Op***on` coordinated proposal packaging. |
 | Case 04 | `@ma***ff` investigated the UpgradeProtectionWindow / cPoC misfire. | `@Op***on` validated the case. | `@Op***on` coordinated proposal packaging. |
-| Case 05 | `@v****n` investigated the Kimi restitution aggregate for epochs 265-276. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
+| Case 05 | `@v****n` investigated the Kimi restitution aggregate for epochs 265-276. | `@ma***ff` and `@mi***ov` performed paid review/challenge work; `@Op***on` performed an unpaid additional attack check. | `@Op***on` coordinated proposal packaging. |
 
 ## Chain Payload
 
