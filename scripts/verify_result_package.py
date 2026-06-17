@@ -178,7 +178,7 @@ def verify_readme() -> None:
         "Case 02 | `@ma***ff` investigated",
         "Case 03 | `@mi***ov` investigated",
         "Case 04 | `@ma***ff` investigated",
-        "Case 05 | `@v****n` published",
+        "Case 05 | `@v****n` investigated",
         "proposal/proposal.json",
         "proposal/payout_breakdown.json",
     ):

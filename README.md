@@ -80,7 +80,7 @@ and coordination across the GRC Proposal #3 package.
 | Case 02 | `@ma***ff` investigated the settle-drop / negative balance case. | `@de***ww` validated the affected set. | `@Op***on` coordinated proposal packaging. |
 | Case 03 | `@mi***ov` investigated the failed cPoC / Kimi shortfall case. | `@de***ww` validated the case. | `@Op***on` coordinated proposal packaging. |
 | Case 04 | `@ma***ff` investigated the UpgradeProtectionWindow / cPoC misfire. | `@Op***on` validated the case. | `@Op***on` coordinated proposal packaging. |
-| Case 05 | `@v****n` published the full-period Kimi restitution calculation reviewed as Case 05. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
+| Case 05 | `@v****n` investigated the Kimi restitution aggregate for epochs 265-276. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
 
 The proposal deposit is `500.000000000 GNK`. It is not paid out as a separate
 coordinator fee; it remains the governance proposal deposit and is returned to
