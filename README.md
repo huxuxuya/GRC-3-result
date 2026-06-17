@@ -82,10 +82,6 @@ and coordination across the GRC Proposal #3 package.
 | Case 04 | `@ma***ff` investigated the UpgradeProtectionWindow / cPoC misfire. | `@Op***on` validated the case. | `@Op***on` coordinated proposal packaging. |
 | Case 05 | `@v****n` investigated the Kimi restitution aggregate for epochs 265-276. | `@ma***ff`, `@mi***ov`, and `@Op***on` performed review, challenge, and attack-check work. | `@Op***on` coordinated proposal packaging. |
 
-The proposal deposit is `500.000000000 GNK`. It is not paid out as a separate
-coordinator fee; it remains the governance proposal deposit and is returned to
-the depositor if the proposal is not vetoed.
-
 ## Chain Payload
 
 `proposal/proposal.json` is the submit-ready governance payload generated from
